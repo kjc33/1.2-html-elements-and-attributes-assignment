@@ -13,7 +13,8 @@ p,
 ul,
 ol,
 .cta-btn[type="submit"],
-.cta-btn .btn-text {
+.cta-btn .btn-text,
+textarea {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
 }
