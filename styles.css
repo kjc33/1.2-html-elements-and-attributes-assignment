@@ -75,6 +75,11 @@ figure {
   margin-bottom: 1rem;
 }
 
+.nav {
+  background-color: #F5F5F5;
+  padding: 30px;
+}
+
 .nav-list {
   list-style-type: none;
   margin: 0;
@@ -180,6 +185,9 @@ textarea {
 @media screen and (max-width: 500px) {
   .col-2 {
     column-count: 1;
+  }
+  .nav {
+    padding: 20px;
   }
 }
 
