@@ -9,6 +9,8 @@ body {
   padding: 80px 50px;
 }
 
+/*Text & Headings*/
+
 p,
 ul,
 ol,
@@ -34,6 +36,8 @@ label {
   font-size: 1rem;
   font-weight: bold;
 }
+
+/*Rows and Containers*/
 
 .row {
   margin: 0 0 50px 0;
@@ -74,6 +78,8 @@ figure {
 .flag {
   margin-bottom: 1rem;
 }
+
+/*Navigation*/
 
 .nav {
   background-color: #F5F5F5;
@@ -132,6 +138,8 @@ figure {
   color: #ffffff;
 }
 
+/*Element Spacing*/
+
 .remove-top-margin {
   margin-top: 0;
 }
@@ -181,6 +189,8 @@ textarea {
   font-weight: bold;
   text-decoration: underline;
 }
+
+/*Media Queries*/
 
 @media screen and (max-width: 500px) {
   .col-2 {
