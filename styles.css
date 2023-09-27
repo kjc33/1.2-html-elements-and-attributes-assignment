@@ -30,8 +30,18 @@ label {
   text-transform: uppercase;
 }
 
+.small {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 .row {
-  margin: 50px 0;
+  margin: 0 0 50px 0;
+}
+
+.container.footer .row,
+figure {
+  margin: 0;
 }
 
 .container.header .row .columns {
@@ -55,10 +65,6 @@ label {
   column-count: 2;
 }
 
-.bio {
-  margin-bottom: 50px;
-}
-
 .headshot {
   width: 100%;
   max-width: 500px;
@@ -69,23 +75,50 @@ label {
   margin-bottom: 1rem;
 }
 
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list .nav-item {
+  display: inline;
+}
+
+.nav-list .nav-item:not(:last-child) {
+  padding-right: 10px;
+}
+
+.nav-item a {
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.nav-item a:hover {
+  text-decoration: none;
+}
+
 /*CTA Button*/
 
 .cta-btn {
   display: inline-block;
   border: solid 2px #000000;
+  background-color: #ffffff;
   padding: 12px 24px;
-  cursor: pointer;
+  font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .cta-btn .btn-text {
+  font-family: "Roboto", sans-serif;
   color: #000000;
-  text-transform: uppercase;
+  font-size: 0.9rem;
   font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5;
   letter-spacing: 1px;
-  text-decoration: none;
 }
 
 .cta-btn:hover,
@@ -102,11 +135,8 @@ label {
   margin-bottom: 0;
 }
 
-.cta-btn[type="submit"] {
-  max-width: 120px;
-  font-weight: bold;
-  text-decoration: underline;
-  line-height: 1.5;
+.extra-top-margin {
+  margin-top: 50px;
 }
 
 /*Form Styling*/
@@ -141,9 +171,25 @@ textarea {
   width: 100%;
 }
 
+.cta-btn[type="submit"] {
+  max-width: 120px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 500px) {
   .col-2 {
     column-count: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact .inline-fields {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .contact {
+    gap: 20px;
   }
 }
 
